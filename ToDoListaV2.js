@@ -1,6 +1,8 @@
 const addTaskInput=document.querySelector(".addTaskInput")
 const addTaskBtn=document.querySelector(".addTaskBtn")
 const myList=document.querySelector(".myList")
+const feedbackHeader=document.querySelector(".feedbackHeader")
+
 
 ShowTask()
 TaskReady()
@@ -16,9 +18,11 @@ function AddTask(){
         li.innerHTML=task
         AddDeleteBtn(li)
         myList.appendChild(li)
+        feedbackHeader.style.display="none"
+        
     }
     else{
-        alert("Write in something..")
+       feedbackHeader.style.display="flex"
     }
 
     addTaskInput.value=""
@@ -48,6 +52,7 @@ function TaskReady(){
     })
 
 }
+
 
 
 function SaveData(){

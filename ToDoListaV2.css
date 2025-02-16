@@ -111,4 +111,15 @@ ul li .deleteBtn{
     margin-left: 20px;
 }
 
+.feedbackHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    display: none;
+}
 
+.feedbackMessage{
+    border-bottom: 2px solid rgb(255,126,146);
+    font-size: 20px;
+}
